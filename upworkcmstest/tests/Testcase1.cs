@@ -14,6 +14,7 @@ namespace upworkcmstest.tests
         {
             var lp = new loginpage(driver);
             lp.login();
+            Console.WriteLine("New Feature added");
             Console.WriteLine("Guru99");
             Console.WriteLine("Guru99");
 
