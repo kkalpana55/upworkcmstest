@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System;
 using upworkcmstest.BaseClass;
 using upworkcmstest.pages;
 
@@ -13,7 +14,8 @@ namespace upworkcmstest.tests
         {
             var lp = new loginpage(driver);
             lp.login();
-            
+            Console.WriteLine("Guru99");
+            Console.WriteLine("Guru99");
 
         }
 
