@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-
 using SeleniumExtras.PageObjects;
 using System;
 using System.Collections.Generic;
@@ -9,35 +8,24 @@ using System.Threading.Tasks;
 
 namespace upworkcmstest.pages
 {
-     class loginpage
+    class Loginpage
     {
+
         private IWebDriver driver;
-        public loginpage(IWebDriver driver)
+        public Loginpage(IWebDriver driver)
         {
             this.driver = driver;
             PageFactory.InitElements(driver, this);
         }
-        [FindsBy(How = How.Id, Using = "t3-username")]
+        [FindsBy(How = How.CssSelector, Using = "input[name='user']")]
         private IWebElement username;
 
-        [FindsBy(How = How.Id, Using = "t3-password")]
+        [FindsBy(How = How.CssSelector, Using = "input[name='pass']")]
         private IWebElement password;
 
-        [FindsBy(How = How.Id, Using = "t3-login-submit")]
+        [FindsBy(How = How.CssSelector, Using = "input[name='submit']")]
         private IWebElement loginbutton;
 
-        public void login()
-        {
-
-            username.SendKeys("kka@gmail.com");
-            password.SendKeys("12345");
-            loginbutton.Click();
-
-
-        }
-        
 
     }
-
 }
-
