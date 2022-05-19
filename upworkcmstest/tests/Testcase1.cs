@@ -16,7 +16,7 @@ namespace upworkcmstest.tests
             lp.login();
             Console.WriteLine("New Feature added");
             Console.WriteLine("Guru99");
-            Console.WriteLine("Guru99");
+            Console.WriteLine("");
 
         }
 
